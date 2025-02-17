@@ -70,9 +70,9 @@ const CoolThreeJSScene = () => {
     }
 
     // Particle system
-    const particlesCount = 2000;
+    const particlesCount = 5000;
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesMaterial = new THREE.PointsMaterial({ color: 0x00ff00, size: 0.1, blending: THREE.AdditiveBlending, transparent: true });
+    const particlesMaterial = new THREE.PointsMaterial({ color: 0x8B5CF6, size: 0.1, blending: THREE.AdditiveBlending, transparent: true });
     
     const positions = new Float32Array(particlesCount * 3);
     for (let i = 0; i < particlesCount; i++) {
