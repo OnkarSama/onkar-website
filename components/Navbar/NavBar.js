@@ -39,7 +39,7 @@ export default function NavBar() {
             </NavbarContent>
 
             {/* External Chip with margin */}
-            <Chip className="py-5 m-4">
+            <Chip className="py-5 m-4 hidden sm:flex">
                 {/* Centered Menu Items */}
                 <NavbarContent className="hidden sm:flex gap-4 justify-center">
                     {["About", "Open Source", "Resume", "Contact Me"].map((item, index) => (
