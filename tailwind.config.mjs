@@ -18,6 +18,7 @@ export default {
         primary: '#8B5CF6', // Soft purple
         secondary: '#A78BFA', // Light purple
         accent: '#7C3AED', // Darker purple accent
+        text: '#D1D5DB', // Soft gray text color
       },
     },
   },
@@ -38,6 +39,7 @@ export default {
             primary: "#8B5CF6",
             secondary: "#A78BFA",
             hover: "#E9D5FF", // Light purple hover effect
+            text: "#374151", // Dark gray text color for light mode
           },
         },
         dark: {
@@ -51,6 +53,7 @@ export default {
             },
             accent: "#7C3AED",
             hover: "#581C87", // Dark purple hover effect
+            text: "#D1D5DB", // Soft gray text color for dark mode
           },
         },
       }
