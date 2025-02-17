@@ -18,10 +18,10 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
-        "About",
-        "Open Source",
-        "Resume",
-        "Contact Me"
+        {label: "About", href: "/about"},
+        {label: "Open Source", href: "open-source"},
+        {label: "Resume", href: "resume"},
+        {label: "Contact Me", href: "contact-me"}
     ];
 
     return (
@@ -64,16 +64,14 @@ export default function NavBar() {
             {/* Mobile Menu */}
             <NavbarMenu>
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
+                    <NavbarMenuItem key={index}>
                         <Link
-                            className="w-full"
-                            color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                            }
-                            href="#"
-                            size="lg"
+                            className="w-full text-2xl"
+                            href={item.href}
+                            size="md"
+                            color={"foreground"}
                         >
-                            {item}
+                            {item.label}
                         </Link>
                     </NavbarMenuItem>
                 ))}
