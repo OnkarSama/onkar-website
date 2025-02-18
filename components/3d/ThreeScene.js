@@ -23,7 +23,7 @@ const CoolThreeJSScene = () => {
   const init = () => {
     // Scene setup
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x111111);
+    scene.background = new THREE.Color(0x000000);
 
     // Camera setup
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -40,9 +40,10 @@ const CoolThreeJSScene = () => {
     orbitControls.enableDamping = true;
     orbitControls.dampingFactor = 0.25;
     orbitControls.screenSpacePanning = false;
+    orbitControls.enableZoom = false; // Disable zooming with scroll
 
     // Lights
-    const ambientLight = new THREE.AmbientLight(0x404040, 1); // Ambient light
+    const ambientLight = new THREE.AmbientLight(0x404040, 1);
     scene.add(ambientLight);
 
     const pointLight = new THREE.PointLight(0xffffff, 1, 100);
@@ -102,7 +103,7 @@ const CoolThreeJSScene = () => {
 
       const textMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00, emissive: 0x00ff00, emissiveIntensity: 0.5 });
       helloWorldText = new THREE.Mesh(textGeometry, textMaterial);
-      helloWorldText.position.set(0, 2, 0); // Adjusted to center
+      helloWorldText.position.set(0, 2, 0);
       scene.add(helloWorldText);
     });
 
@@ -116,29 +117,21 @@ const CoolThreeJSScene = () => {
   const animate = () => {
     requestAnimationFrame(animate);
 
-    // Rotate the torus
     torus.rotation.x += 0.01;
     torus.rotation.y += 0.01;
-
-    // Update particle system position (simulate floating particles)
     particleSystem.rotation.y += 0.001;
 
-    // Move spheres randomly to add more dynamics
     spheres.forEach(sphere => {
       sphere.position.x += (Math.random() - 0.5) * 0.05;
       sphere.position.y += (Math.random() - 0.5) * 0.05;
       sphere.position.z += (Math.random() - 0.5) * 0.05;
     });
 
-    // Rotate the "Hello World" text for added effect
     if (helloWorldText) {
       helloWorldText.rotation.y += 0.01;
     }
 
-    // Update the controls
     orbitControls.update();
-
-    // Render the scene
     renderer.render(scene, camera);
   };
 
@@ -158,7 +151,7 @@ const CoolThreeJSScene = () => {
   return (
     <div
       ref={mountRef}
-      style={{ width: '100%', height: '100vh', overflow: 'hidden' }}
+      style={{ width: '100%', height: '93vh', overflow: 'hidden' }}
     />
   );
 };
