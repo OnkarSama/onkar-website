@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="p-10">
             {/* Main Header */}
             <div className="text-center mb-10">
-                <h2 className="text-3xl font-bold">About Me</h2>
+                <h2 className="text-3xl font-bold text-heading">About Me</h2>
             </div>
 
             {/* Profile Section */}
@@ -23,7 +23,7 @@ export default function AboutMe() {
                             radius="full"
                             mb="6"
                         />
-                        <h3 className="text-xl font-semibold text-center">Hello, I'm Onkar Dhillon</h3>
+                        <h3 className="text-xl font-semibold text-center text-subheading">Hello, I'm Onkar Dhillon</h3>
                         <p className="text-md text-text mt-2 text-center">I'm a Computer Science Student specializing in SWE and Cybersecurity. I also minor in Math.</p>
                     </CardHeader>
                 </Card>
@@ -34,7 +34,7 @@ export default function AboutMe() {
                 {/* Background Card */}
                 <Card className="w-full max-w-[400px] h-full flex flex-col justify-center transition-colors hover:bg-hover cursor-pointer">
                     <CardHeader>
-                        <h4 className="font-bold text-lg text-center">Background</h4>
+                        <h4 className="font-bold text-lg text-center text-subheading">Background</h4>
                     </CardHeader>
                     <Divider />
                     <CardBody className="flex-grow flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function AboutMe() {
                 {/* Skills Card */}
                 <Card className="w-full max-w-[400px] h-full flex flex-col justify-center transition-colors hover:bg-hover cursor-pointer" isPressable>
                     <CardHeader>
-                        <h4 className="font-bold text-lg text-center">Skills</h4>
+                        <h4 className="font-bold text-lg text-center text-subheading">Skills</h4>
                     </CardHeader>
                     <Divider />
                     <CardBody className="flex-grow flex items-center justify-center">

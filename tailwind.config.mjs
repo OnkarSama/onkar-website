@@ -35,7 +35,8 @@ export default {
           layout: {},
           colors: {
             background: "#F3E8FF", // Soft lavender
-            foreground: "#7C3AED", // Purple accents
+            subheading: "#7C3AED", // Purple accents (formerly foreground)
+            heading: "#5B21B6", // Darker purple for headings
             primary: "#8B5CF6",
             secondary: "#A78BFA",
             hover: "#E9D5FF", // Light purple hover effect
@@ -46,7 +47,8 @@ export default {
           layout: {},
           colors: {
             background: "#000000", // Black background
-            foreground: "#C4B5FD", // Soft purple foreground
+            subheading: "#C4B5FD", // Soft purple subheading (formerly foreground)
+            heading: "#6D28D9", // Darker purple for headings
             primary: {
               DEFAULT: "#8B5CF6", // Bright purple primary
               foreground: "#FFFFFF",
