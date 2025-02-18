@@ -1,4 +1,4 @@
-import AboutMe from "../../components/AboutMe/AboutMe";
+import AboutMe from "@/components/AboutMe/AboutMe";
 
 export default function About() {
   return (

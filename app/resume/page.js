@@ -1,4 +1,4 @@
-import ResumeDisplay from "../../components/ResumeDisplay/ResumeDisplay";
+import ResumeDisplay from "@/components/ResumeDisplay/ResumeDisplay";
 
 export default function Resume() {
     return (
