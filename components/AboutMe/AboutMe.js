@@ -12,7 +12,7 @@ export default function AboutMe() {
             </div>
 
             {/* Profile Section */}
-            <div className="flex justify-center mb-10">
+            <div className="flex justify-center mb-10 p-2">
                 <Card className="w-full max-w-[400px] h-full flex flex-col justify-center transition-colors hover:bg-hover cursor-pointer" isPressable onPress={() => window.location.href = "https://www.linkedin.com/in/0nkardhillon/"}>
                     <CardHeader className="flex flex-col items-center">
                         <Image
