@@ -18,9 +18,9 @@ export default function AboutMe() {
                         <Image
                             alt="Your Profile Picture"
                             src="/7e980718-578a-4d20-a342-675c02248325.jpeg"
-                            height={150}
+                            height={200}
                             width={300}
-                            radius="full"
+                            radius="sm"
                             mb="6"
                         />
                         <h3 className="text-xl font-semibold text-center text-subheading">Hello, I'm Onkar Dhillon</h3>
