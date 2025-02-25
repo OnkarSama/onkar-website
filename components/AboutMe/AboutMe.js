@@ -19,7 +19,7 @@ export default function AboutMe() {
                             alt="Your Profile Picture"
                             src="/7e980718-578a-4d20-a342-675c02248325.jpeg"
                             height={150}
-                            width={200}
+                            width={300}
                             radius="full"
                             mb="6"
                         />
