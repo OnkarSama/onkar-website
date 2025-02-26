@@ -23,9 +23,10 @@ export default function AboutMe() {
                             radius="sm"
                             mb="6"
                         />
-                        <h3 className="text-xl font-semibold text-center text-subheading">Hello, I'm Onkar Dhillon</h3>
-                        <p className="text-md text-text mt-2 text-center">I'm a Computer Science Student specializing in SWE and Cybersecurity. I also minor in Math.</p>
                     </CardHeader>
+                    <Divider/>
+                    <h3 className="text-xl font-semibold text-center text-subheading">Hello, I'm Onkar Dhillon</h3>
+                        <p className="text-md text-text mt-2 text-center">I'm a Computer Science Student specializing in SWE and Cybersecurity. I also minor in Math.</p>
                 </Card>
             </div>
 
