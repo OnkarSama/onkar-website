@@ -1,4 +1,4 @@
-'use client';
+it'use client';
 
 import React from 'react';
 import { Card, CardHeader, CardBody, CardFooter, Image, Divider } from '@heroui/react';
@@ -25,7 +25,7 @@ export default function AboutMe() {
                         />
                     </CardHeader>
                     <Divider/>
-                    <h3 className="text-xl font-semibold text-center text-subheading p-5">Hello, I'm Onkar Dhillon</h3>
+                    <h3 className="text-xl font-semibold text-center text-subheading px-5 py-2">Hello, I'm Onkar Dhillon</h3>
                         <p className="text-md text-text mt-2 text-center">I'm a Computer Science Student specializing in SWE and Cybersecurity. I also minor in Math.</p>
                 </Card>
             </div>
