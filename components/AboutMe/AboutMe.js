@@ -17,7 +17,7 @@ export default function AboutMe() {
                     <CardHeader className="flex flex-col items-center">
                         <Image
                             alt="Your Profile Picture"
-                            src="/7e980718-578a-4d20-a342-675c02248325.jpeg"
+                            src="/MyPhoto.jpeg"
                             height={200}
                             width={300}
                             radius="sm"
